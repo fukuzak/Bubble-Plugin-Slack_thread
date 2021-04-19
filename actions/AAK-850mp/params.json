@@ -1,0 +1,40 @@
+{
+    "category": "plugins",
+    "display": "Filter thread message",
+    "fields": {
+        "AAL": {
+            "caption": "Output type",
+            "doc": "Filter slack message containing thread_ts.",
+            "editor": "custom_type",
+            "is_list": true,
+            "name": "type",
+            "rank": 0,
+            "value": "_any_thing"
+        },
+        "AAW": {
+            "caption": "List of slack message",
+            "doc": "API result (Slack_messages's messages)",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "message_list",
+            "rank": 1,
+            "value": "_any_thing"
+        }
+    },
+    "return_value": {
+        "AAM": {
+            "caption": "Filtered slack messages",
+            "is_list": false,
+            "name": "thread_messages",
+            "rank": 0,
+            "value": "custom_data_AAL"
+        },
+        "AAX": {
+            "caption": "debug text",
+            "name": "text_out",
+            "rank": 1,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}
